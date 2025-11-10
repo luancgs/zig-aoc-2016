@@ -1,3 +1,3 @@
-[submodule "advent-of-code-inputs"]
+[submodule "inputs"]
 	path = inputs
 	url = git@github.com:luancgs/advent-of-code-inputs.git
