@@ -4,7 +4,7 @@ const fs = std.fs;
 const year = 2016;
 
 pub fn get_input(buffer: *const []u8, day: comptime_int) anyerror!usize {
-    const file_buffer = try std.heap.page_allocator.alloc(u8, 1024);
+    const file_buffer = try std.heap.page_allocator.alloc(u8, 4096 * 4);
     defer std.heap.page_allocator.free(file_buffer);
 
     const cwd = fs.cwd();
